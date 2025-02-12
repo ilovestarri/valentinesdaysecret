@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: pink;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: white;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .yes-button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .yes-button:hover {
+            transform: scale(1.2);
+            background-color: darkred;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: white;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will you be my Valentine? 💖</h1>
+    <div class="button-container">
+        <button class="yes-button" onclick="showMessage()">Yes!</button>
+    </div>
+    <p id="message">OMG YAYYYYYYYY I LOVE YOU SOOOO MUCH BABY 💕</p>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
